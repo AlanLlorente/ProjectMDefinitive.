@@ -102,6 +102,7 @@
       <path value="$PROJECT_DIR$/ProjectM/vendor/myclabs/deep-copy" />
       <path value="$PROJECT_DIR$/ProjectM/vendor/league/commonmark" />
       <path value="$PROJECT_DIR$/ProjectM/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/ProjectM/vendor/laravel/ui" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />
