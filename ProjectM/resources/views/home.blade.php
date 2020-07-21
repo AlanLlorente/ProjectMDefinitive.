@@ -15,6 +15,7 @@
                     @endif
 
                     {{ __('You are logged in!') }}
+                        <a href="/masajes">Empieza creando una cita</a>
                 </div>
             </div>
         </div>

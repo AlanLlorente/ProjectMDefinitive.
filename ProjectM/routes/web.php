@@ -19,4 +19,14 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::get('/masajes', 'MasajesController@index');
+Route::get('/masajes/create', 'MasajesController@create');
+Route::get('masajes/{masajes}', 'MasajesController@show');
+Route::post('/masajes', 'MasajesController@store');
+Route::get('/masajes/edit/{masajes}', 'MasajesController@edit');
+Route::put('/masajes/{masajes}', 'MasajesController@update');
+Route::delete('/masajes/{masaje}', 'MensajesController@destroy');
+
+
+
 Route::get('/home', 'HomeController@index')->name('home');
