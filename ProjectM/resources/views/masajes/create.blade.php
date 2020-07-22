@@ -15,7 +15,7 @@
         <input type="text" name="tipo">
 
         <h3>fecha cita</h3>
-        <input type="text" name="fecha_cita">
+        <input type="datetime-local" name="fecha_cita">
 
         <h3>observaciones</h3>
         <textarea name="observaciones" cols="30" rows="10"></textarea>

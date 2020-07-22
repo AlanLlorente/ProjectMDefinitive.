@@ -8,8 +8,10 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>{{ $masajes->tipo }}</h1>
-    <br>
-    <h2>{{ $masajes->fecha_cita }}</h2>
+<h1>{{ $masajes->tipo }}</h1>
+<br>
+<h2>{{ $masajes->fecha_cita }}</h2>
+
+<a href="/masajes/edit/{{ $masajes->id }}">Editar</a>
 </body>
 </html>

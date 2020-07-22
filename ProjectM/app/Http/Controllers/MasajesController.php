@@ -72,7 +72,7 @@ class MasajesController extends Controller
      */
     public function edit(Masajes $masajes)
     {
-
+        return view('masajes.edit', compact('masajes'));
     }
 
     /**
@@ -84,7 +84,14 @@ class MasajesController extends Controller
      */
     public function update(Request $request, Masajes $masajes)
     {
-        //
+        $attributes = request()->validate([
+            'tipo' => 'required',
+            'fecha_cita' => 'required',
+            'observaciones' => 'required'
+        ]);
+
+        $masajes->update($attributes);
+        return redirect('/masajes');
     }
 
     /**
@@ -95,6 +102,7 @@ class MasajesController extends Controller
      */
     public function destroy(Masajes $masajes)
     {
-        //
+        $masajes->delete();
+        return redirect('/masajes');
     }
 }

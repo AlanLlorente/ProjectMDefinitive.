@@ -25,7 +25,9 @@ Route::get('masajes/{masajes}', 'MasajesController@show');
 Route::post('/masajes', 'MasajesController@store');
 Route::get('/masajes/edit/{masajes}', 'MasajesController@edit');
 Route::put('/masajes/{masajes}', 'MasajesController@update');
-Route::delete('/masajes/{masaje}', 'MensajesController@destroy');
+Route::delete('/masajes/{masajes}', 'MasajesController@destroy');
+
+//Route::resource('masajes', 'MasajesController');
 
 
 
